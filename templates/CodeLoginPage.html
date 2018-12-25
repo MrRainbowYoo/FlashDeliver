@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="{% static 'js/CodeLoginPage.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/CodeLoginPage.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="opacity: 0.8">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <!--<a class="dropdown-item" href="#">Action</a>-->
+        <!--<a class="dropdown-item" href="#">Another action</a>-->
+        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" >登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content">
+    <div id="CodeLoginPageBackground" style="background-image: url({% static "img/loginPageBackground.png." %})">
+        <hr style="padding-top: 20%; margin: unset">
+        <div style="width: 20% ;padding: 2%;background-color: #c2d1de; opacity: 0.6 ;margin:0 auto">
+            <div class="row" style="padding: 5%">
+                <div class="col-6">
+                    <a href="{% url 'DDL:LoginPage' %}">账号登录</a>
+                </div>
+
+                <div class="col-6" style="text-align: center">
+                    <a >动态码登录</a>
+                </div>
+            </div>
+
+            <div class="row" style="padding: 5%">
+                <input type="text" placeholder="输入手机号码" style="width: 100%; padding: 2%">
+            </div>
+
+            <!--<div class="row" style="padding: 5%">-->
+                <!--<input type="password" placeholder="密码" style="width: 100%; padding: 2%">-->
+            <!--</div>-->
+
+            <div class="row" style="padding: 5%">
+                <input type="text" placeholder="验证码" style="width: 40%; padding: 2%;">
+
+                <img src="{% static 'img/identifyingCode.png' %}" style="margin-left: 5%;padding-top:2% ;width: 30%; height: 100%"/>
+
+                <button type="button" class="btn btn-link" style="color: black;width: 20%">换一张</button>
+
+                <!--<span style="">换一张</span>-->
+            </div>
+            <div class="row" style="padding: 5%">
+                <input type="text" placeholder="短信验证码" style="width: 60%; padding: 2%">
+                <button type="button" class="btn btn-primary btn-sm" style="background-color: #ffa800;color: black;width: 40%">获取验证码</button>
+            </div>
+
+            <div class="row" style="padding: 5%">
+                <button type="button" class="btn btn-lg btn-primary" style="width: 100%">登录</button>
+            </div><hr>
+            <div class="col-6">
+                <a href="{% url 'DDL:SignupPage' %}">注册账户</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校园闪送员</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/SchoolFlashDriver.css' %}">
+</head>
+<body >
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="opacity: 0.8">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <!--<a class="dropdown-item" href="#">Action</a>-->
+        <!--<a class="dropdown-item" href="#">Another action</a>-->
+        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="content" id="SchoolFlashDriverBckgoround" style="background-image: url({% static "img/PriceBackground.jpg." %})">
+    <div style="width: 50%;padding: 4%;margin: 0 auto">
+        <h1>筋斗云校园闪送邀你，便捷赚钱</h1>
+        <br>
+        <h4 style="width: 50%;margin: 0 auto">领快递的同时还能赚钱</h4>
+    </div>
+
+    <div style="width: 60%;padding: 5%;margin: 0 auto">
+        <div class="card" style="opacity: 0.8">
+            <div class="card-header">
+                信息认证：
+            </div>
+            <div class="card-body" style="padding: 5%; height: 400px">
+                <div class="row" style="padding-left: 10%;margin-bottom: 2%">
+                    <label>学号:</label>
+                    <input type="text" class="inputStyle">
+                </div>
+                <div class="row" style="padding-left: 10%;margin-bottom: 4%">
+                    <label>姓名:</label>
+                    <input type="text" class="inputStyle">
+                </div>
+                <div class="row" style="width: 85%;margin: 0 auto">
+                    <label>
+                        <i class="fa fa-address-card" style="font-size:22px"></i>
+                        点击选择文件上传学生证照片（要求照片上有学生所有相关信息）
+                    </label>
+
+                </div>
+                <div class="row" style="width: 40%;margin: 0 auto;padding-top: 5%;padding-bottom: 5%">
+                    <button>
+                        <input type="file" style="width: 100%">
+                    </button>
+                </div>
+                <div class="row" style="width:30%;margin: 0 auto">
+                    <label style="font-size: 10px;color: #e02222">请认真填写以上信息并仔细核实</label>
+                </div>
+                <div class="row" style="width: 20%;margin: 0 auto;padding: 2%">
+                    <a  class="btn btn-sm btn-primary"  href="{% url 'DDL:loadHomePage' %}" style="background-color: #4086cd">
+                        提交信息
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

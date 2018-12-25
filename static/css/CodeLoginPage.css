@@ -1,0 +1,8 @@
+#CodeLoginPageBackground{
+    background-image: url(../../../resource/img/loginPageBackground.png);
+
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 100%;
+    padding-bottom: 20%
+}

@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闪送价格</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="{% static 'js/FlashDeliverPrice.js' %}"></script>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/FlashDeliverPrice.css' %}">
+
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="opacity: 0.8">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <!--<a class="dropdown-item" href="#">Action</a>-->
+        <!--<a class="dropdown-item" href="#">Another action</a>-->
+        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content">
+        <div id="PriceBackground1" style="background-image:url({% static "img/PriceBackground.jpg." %}) ">
+            <div id="title_style" >
+                <h3>顺手快递，所以快！一款为营造校园互助氛围的App！快来加入吧！</h3>
+            </div>
+            <br>
+            <br>
+            <div style="margin-left: 25%">
+                <p>闪送价格:</p>
+                <div id="words_style">
+                    <p>2公里以内，5公斤以下，4元</p>
+                    <p>2-5公里每增加1km,加收1元</p>
+                    <p>5公里后每增加1km,加收2元</p>
+                    <p>5-20公斤每增加1kg,加收2元</p>
+                    <p>超出20kg后,每增加1kg,加收5元</p>
+                </div>
+                <p>溢价说明:</p>
+               <div id="words_style">
+                   <p>溢价是闪送为了保证良好的服务体验，根据供需情况动态调整价格的策略；</p>
+                   <p>天气、交通高峰时段、特殊节假日等原因可能造成溢价；</p>
+                   <p>倍数溢价运算规则：</p>
+                   <p>溢价金额 = 订单优惠前的总金额（不包含加价费）x（溢价倍数-1）。（遇小数向上取整）</p>
+               </div>
+                <p>取消单扣款说明：</p>
+                <div id="words_style">
+                    <p>1.若订单为即时单：</p>
+                    <p>若用户在闪送员接单时间8分钟以内取消订单，则在十单内可以免费取消两单，第三单开始扣除2元取消费；</p>
+                    <p>若用户在闪送员接单时间8分钟以后取消订单，则扣除5元上门费。</p>
+                    <p>2.若订单为预约单：若用户在闪送员接单后取消订单，则十单内可以免费取消两单，第三单开始扣除2元取消费 。</p>
+                    <p>3.若闪送员已取件：若用户在闪送员抢单8分钟后要求客服取消订单，将扣除5元上门费。</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="experiencebuttom">
+                <button type="button" class="btn btn-lg btn-primary" >立即体验</button>
+            </div>
+        </div>
+</div>
+
+
+</body>
+</html>

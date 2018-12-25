@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e850898-c562-4bf7-a067-a22986b953be" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1356056877">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/OrderOnline.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="238" column="14" lean-forward="true" selection-start-line="238" selection-start-column="14" selection-end-line="238" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/MyBalance.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="75" column="65" lean-forward="true" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/ConfirmOrder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1160">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ConfirmOrder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3420">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/recharge.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/SchoolFlashDriver.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/SignupPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DDL/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DDL/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>flash</find>
+      <find>/r</find>
+      <find>r</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\flash</dir>
+    </dirStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DDL/views.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/js/HomePage.js" />
+        <option value="$PROJECT_DIR$/static/css/OrderOline.css" />
+        <option value="$PROJECT_DIR$/templates/ConfirmOrde.html" />
+        <option value="$PROJECT_DIR$/static/css/HomePage.css" />
+        <option value="$PROJECT_DIR$/static/js/OrderOnline.js" />
+        <option value="$PROJECT_DIR$/flash/settings.py" />
+        <option value="$PROJECT_DIR$/DDL/models.py" />
+        <option value="$PROJECT_DIR$/flash/urls.py" />
+        <option value="$PROJECT_DIR$/DDL/admin.py" />
+        <option value="$PROJECT_DIR$/DDL/views.py" />
+        <option value="$PROJECT_DIR$/DDL/urls.py" />
+        <option value="$PROJECT_DIR$/templates/FlashDeliverPrice.html" />
+        <option value="$PROJECT_DIR$/templates/HomePage.html" />
+        <option value="$PROJECT_DIR$/templates/CodeLoginPage.html" />
+        <option value="$PROJECT_DIR$/templates/LoginPage.html" />
+        <option value="$PROJECT_DIR$/templates/MyFlashDeliver.html" />
+        <option value="$PROJECT_DIR$/templates/OrderOnline.html" />
+        <option value="$PROJECT_DIR$/templates/recharge.html" />
+        <option value="$PROJECT_DIR$/templates/SchoolFlashDriver.html" />
+        <option value="$PROJECT_DIR$/templates/SignupPage.html" />
+        <option value="$PROJECT_DIR$/templates/ConfirmOrder.html" />
+        <option value="$PROJECT_DIR$/static/js/ConfirmOrder.js" />
+        <option value="$PROJECT_DIR$/templates/MyBalance.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="615" />
+    <option name="y" value="90" />
+    <option name="width" value="1939" />
+    <option name="height" value="1059" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>DjangoUnresolvedLoadInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="DDL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Documents\WeChat Files\FrankCool035\Files\flash\static\css" />
+      <recent name="C:\Users\HP\Documents\WeChat Files\FrankCool035\Files\flash\templates" />
+      <recent name="C:\Users\HP\Documents\WeChat Files\FrankCool035\Files\flash\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\flash\static\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="tests" factoryName="不至于">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flash" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="文档">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flash" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flash" type="Python.DjangoServer" factoryName="Django server">
+      <module name="flash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e850898-c562-4bf7-a067-a22986b953be" name="Default Changelist" comment="" />
+      <created>1545400080009</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545400080009</updated>
+      <workItem from="1545400085875" duration="2922000" />
+      <workItem from="1545404246667" duration="577000" />
+      <workItem from="1545405438731" duration="650000" />
+      <workItem from="1545697952880" duration="2112000" />
+      <workItem from="1545701173939" duration="259000" />
+      <workItem from="1545702198408" duration="10000" />
+      <workItem from="1545702237286" duration="2537000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9067000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17627347" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="运行" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="查找" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2776204" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="13" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/img/homePageBackground.png" />
+    <entry file="file://$PROJECT_DIR$/static/css/OrderOline.css" />
+    <entry file="file://$PROJECT_DIR$/static/js/HomePage.js" />
+    <entry file="file://$PROJECT_DIR$/static/img/PriceBackground.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/css/FlashDeliverPrice.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/CodeLoginPage.css" />
+    <entry file="file://$PROJECT_DIR$/static/img/loginPageBackground.png" />
+    <entry file="file://$PROJECT_DIR$/static/css/ConfirmOrder.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/MyFlashDeliver.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/SignupPage.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/SchoolFlashDriver.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/HomePage.css" />
+    <entry file="file://$PROJECT_DIR$/static/js/OrderOnline.js" />
+    <entry file="file://$PROJECT_DIR$/flash/settings.py" />
+    <entry file="file://$PROJECT_DIR$/DDL/models.py" />
+    <entry file="file://$PROJECT_DIR$/flash/urls.py" />
+    <entry file="file://$PROJECT_DIR$/static/js/MyFlashDeliver.js" />
+    <entry file="file://$PROJECT_DIR$/DDL/admin.py" />
+    <entry file="file://$PROJECT_DIR$/templates/FlashDeliverPrice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/CodeLoginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/LoginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="61" column="10" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="61" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/MyFlashDeliver.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="56" column="10" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="56" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ConfirmOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recharge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/SchoolFlashDriver.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/SignupPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDL/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDL/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/ConfirmOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/OrderOnline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="238" column="14" lean-forward="true" selection-start-line="238" selection-start-column="14" selection-end-line="238" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/MyBalance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="75" column="65" lean-forward="true" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

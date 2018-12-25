@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的闪送</title>
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'js/MyFlashDeliver.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/MyFlashDeliver.css' %}">
+    <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <!--<a class="dropdown-item" href="#">Action</a>-->
+        <!--<a class="dropdown-item" href="#">Another action</a>-->
+        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content iconfont">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side-bar">
+                    <ul>
+                        <li class="big line-bottom"><a style="color:blue;" href="{% url 'DDL:MyFlashDeliver' %}"><span>&#xe6f3;</span> 我的订单</a></li>
+                        <li class="big"><span>&#xe662;</span> 我的账户</li>
+                        <li><a href="{% url 'DDL:Mybalance' %}">账户余额</a></li>
+                        <li><a href="{% url 'DDL:Recharge' %}">充值</a></li>
+                        <li><a href="#">优惠券</a></li>
+                        <li><a href="#">申请发票</a></li>
+                        <li class="big line-top"><span>&#xe604;</span> 设置</li>
+                        <li><a href="#">修改密码</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+
+
+
+{#                <div class="tab-head rightpart-top">#}
+{#                    <ul>#}
+{#                        <li class="selected">待收订单【0】</li>#}
+{#                        <li>待送订单【0】</li>#}
+{#                        <li>待抢订单【0】</li>#}
+{#                        <li>已完成订单【0】</li>#}
+{#                    </ul>#}
+{#                </div>#}
+{#                <div class="tab-content">#}
+{#                        <div class="show">content1</div>#}
+{#                        <div>content2</div>#}
+{#                        <div>content3</div>#}
+{#                        <div>content4</div>#}
+{#                </div>#}
+
+
+
+
+
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" id="test1">
+                    <label class="nav-link active" id="label1">发布中【6】</label>
+                  </li>
+                  <li class="nav-item" id="test2">
+                    <label class="nav-link" id="label2">待送订单【3】</label>
+                  </li>
+                  <li class="nav-item" id="test3">
+                    <label class="nav-link" id="label3">待抢订单【1】</label>
+                  </li>
+                    <li class="nav-item" id="test4">
+                    <label class="nav-link" id="label4">已完成订单【1】</label>
+                  </li>
+                </ul>
+
+                <table border="1" id="order-info1" class="rightpart-bottom" style="border: none">
+                    <tbody id="table-body1" style="width: 100%" >
+                        <tr style="width: 100%">
+                            <td><li style="border: none; text-align: center; font-size: 18px">订单号码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">寄件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">收件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">费用</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">闪送员</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">取件密码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">状态</li></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border="1" id="order-info2" class="rightpart-bottom" style="display: none; border: none" >
+                    <tbody id="table-body2" style="width: 100%">
+                       <tr style="width: 100%">
+                            <td><li style="border: none; text-align: center; font-size: 18px">订单号码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">寄件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">收件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">费用</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">闪送员</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">取件密码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">状态</li></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table border="1" id="order-info3" class="rightpart-bottom" style="display: none; border: none" >
+                    <tbody id="table-body3" style="width: 100%">
+                       <tr style="width: 100%">
+                            <td><li style="border: none; text-align: center; font-size: 18px">订单号码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">寄件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">收件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">费用</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">闪送员</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">取件密码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">状态</li></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border="1" id="order-info4" class="rightpart-bottom" style="display: none; border: none" >
+                    <tbody id="table-body4" style="width: 100%">
+                       <tr style="width: 100%">
+                            <td><li style="border: none; text-align: center; font-size: 18px">订单号码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">寄件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">收件人</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">费用</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">闪送员</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">取件密码</li></td>
+                            <td><li style="border: none; text-align: center; font-size: 18px">状态</li></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+{#                <p id="show-page">总共 1 页，2 条记录，每页 10 条记录</p>#}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

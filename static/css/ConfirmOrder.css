@@ -1,0 +1,74 @@
+.confirm-header{
+    font-size: 22px;
+    color: #595A5C;
+}
+
+.back-btn{
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+}
+.card-title{
+    color: #ffb848;
+    font-size: 24px;
+}
+
+.user{
+    float: left;
+    font-weight: bold;
+}
+
+.show-price{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #cdcdcd;
+}
+
+.show-price div{
+    /*width: 160px;*/
+    /*height: 32px;*/
+    margin: 15px 0 15px 20px;
+}
+
+.show-price .price-name-last{
+    color: #e02222;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.show-price .count{
+    margin-left: 20px;
+    color: #fd4801;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.show-price .count-last{
+    margin-left: 10px;
+}
+
+.pay-style{
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.pay-style #pay-style-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0da3e2;
+    margin-right: 10px;
+}
+
+.submit-btn{
+    float: right;
+    width: 200px;
+}
+
+.submit{
+    float: right;
+    margin-top: 50px;
+    margin-right: -200px;
+}
+.container .card{
+    margin-top: 30px;
+}

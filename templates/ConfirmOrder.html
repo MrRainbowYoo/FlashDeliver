@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认订单</title>
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/recharge.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ConfirmOrder.css' %}">
+    <script src="{% static 'js/saveData.js' %}"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <!--<a class="dropdown-item" href="#">Action</a>-->
+        <!--<a class="dropdown-item" href="#">Another action</a>-->
+        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="contant">
+    <div class="container">
+        <div class="card">
+            <div class="card-header confirm-header">
+                确认订单信息
+                <a href="http://127.0.0.1:8000/OrderOnline" class="btn btn-primary back-btn">返回修改订单</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" id="weight">1.9公里/5公斤</h5><br>
+                <div>
+                    <span class="user">寄件人信息：</span><span id="sendPersonMessage"></span>
+                </div>
+                <div>
+                    <span class="user">收件人信息：</span><span id="getPersonMessage"></span>
+                </div>
+                <div>
+                    <span class="user">收 件 时 间：</span><span id="receiveTime">立即取件</span>
+                </div>
+                <div>
+                    <span class="user">备 注 信 息：</span><span id="remark">火速送达</span>
+                </div>
+
+            </div>
+            <div class="card-body" style="border-top: 15px solid #f6f6f6">
+                <div class="show-price">
+                    <div>
+                        <span class="price-name">订单总额：</span>
+                        <span class="count" id="fee"></span>
+                        <span>元</span>
+                    </div>
+                    <div>
+                        <span class="price-name">优惠抵扣：</span>
+                        <span class="count" id="disCount"></span>
+                        <span>元</span>
+                    </div>
+{#                    <div>#}
+{#                        <span class="price-name">余额支付：</span>#}
+{#                        <span class="count">0</span>#}
+{#                        <span>元</span>#}
+{#                    </div>#}
+
+                    <hr>
+
+                    <div>
+                        <span class="price-name price-name-last">还需支付：</span>
+                        <span class="count count-last" id="remainToPay"></span>
+                        <span>元</span>
+                    </div>
+                </div>
+                <div class="pay-style">
+                    <label id="pay-style-title">支付方式</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled>
+                        <label class="form-check-label" for="inlineRadio1">到付</label>
+                    </div>
+                    <div class="form-check form-check-inline" data-toggle="modal" data-target="#myModal">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                        <label class="form-check-label" for="inlineRadio2">在线支付</label>
+                    </div>
+                </div>
+{#                <a href="http://127.0.0.1:8000/MyFlashDeliver" class="btn btn-primary submit-btn">提交订单</a>#}
+
+
+                <button class="btn btn-primary btn-lg submit-btn" data-toggle="modal" data-target="#myModal" id="submitPayment">提交订单</button>
+
+
+                <div class="submit">
+                <p>
+                    点击“提交订单”按钮，即表示您同意 <a href=""#>《闪送服务•用户协议》</a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-left: -500px">
+    <div class="modal-dialog">
+        <div class="modal-content"  style="width: 1000px">
+            <div class="modal-body">
+                <div  style="font-size: 26px">请选择支付方式</div>
+                        <div class="pay-item" style="margin: 0 auto; text-align: center">
+                            <button type="button" class="pay-btn btn btn-light selected" onclick="changePayItem0()">
+                                <img src="{% static "img/Alipay.jpg" %}">
+                            </button>
+                            <button type="button" class="pay-btn btn btn-light" onclick="changePayItem1()">
+                                <img src="{% static "img/ChinaUnionPay.jpg" %}">
+                            </button>
+                            <button type="button" class="pay-btn btn btn-light" onclick="changePayItem2()">
+                                <img src="{% static "img/WechatPay.jpg" %}">
+                            </button>
+                        </div>
+                        <div style="text-align: center; padding: 2%">
+                            <span style="font-size: 24px">支付金额：</span>
+                            <span id="payNumber" style="font-size: 26px;color: #ff3600"></span>
+                            <span style="font-size: 24px">元</span>
+                        </div>
+                        <div style="text-align: center">
+                            <img style="width: 50%; display: inline" src="{% static "img/QRcode.jpg" %}" id="QRcode" alt="二维码">
+                            <img style="width: 50%; display: none" src="{% static "img/getWechatMoney.jpg" %}" id="wechatPay" alt="二维码" >
+                            <img style="width: 50%; display: none" src="{% static "img/success.png" %}" id="successImg" alt="二维码" >
+                        </div>
+
+                </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-default" id="successBtn" href="{% url 'DDL:MyFlashDeliver' %}" style="display: none;color: black">完成</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+</body>
+</html>
+<script src="{% static 'js/ConfirmOrder.js' %}"></script>

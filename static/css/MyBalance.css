@@ -1,0 +1,43 @@
+.container{
+    /*border: 1px solid black;*/
+}
+
+li{
+    list-style: none;
+}
+
+.side-bar li{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    margin: 20px 0 ;
+    font-size: 12px;
+}
+
+.side-bar li a{
+    color: #000;
+}
+
+.side-bar li.big{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.side-bar li.line-bottom{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.side-bar li.line-top{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.balance{
+    display: inline-block;
+    color: #ff3600;
+    font-size: 24px;
+}

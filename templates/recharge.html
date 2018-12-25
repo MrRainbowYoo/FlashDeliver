@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/MyFlashDeliver.css' %}">
+    <link rel="stylesheet" href="{% static 'css/recharge.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navBar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+    <script src="{% static 'js/recharge.js' %}"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+    </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content iconfont">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side-bar">
+                    <ul>
+                        <li class="big line-bottom"><a href="{% url 'DDL:MyFlashDeliver' %}"><span>&#xe6f3;</span> 我的订单</a></li>
+                        <li class="big"><span>&#xe662;</span> 我的账户</li>
+                        <li><a href="{% url 'DDL:Mybalance' %}">账户余额</a></li>
+                        <li><a href="{% url 'DDL:Recharge' %}" style="color: blue">充值</a></li>
+                        <li><a href="#">优惠券</a></li>
+                        <li><a href="#">申请发票</a></li>
+                        <li class="big line-top"><span>&#xe604;</span> 设置</li>
+                        <li><a href="#">修改密码</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="card" style="height: 650px;margin-top: 20px">
+                    <div class="card-body">
+                        <span>您当前的闪送余额为：</span>
+                        <span class="balance">0</span>
+                        <span class="balance">元</span>
+                        <button type="button" class="btn btn-primary" style="margin-left: 10px;margin-top: -5px">充值</button>
+                        <div class="recharge-header">请选择充值金额</div>
+                        <div class="recharge-item">
+                            <button type="button" class="recharge-btn btn btn-light selected" onclick="changeItem0()">50元</button>
+                            <button type="button" class="recharge-btn btn btn-light" onclick="changeItem1()">100元</button>
+                            <button type="button" class="recharge-btn btn btn-light" onclick="changeItem2()">200元</button>
+                            <button type="button" class="recharge-btn btn btn-light" onclick="changeItem3()">500元</button>
+                        </div>
+                        <div class="recharge-header">请选择支付方式</div>
+                        <div class="pay-item">
+                            <button type="button" class="pay-btn btn btn-light selected" onclick="changePayItem0()">
+                                <img src="{% static "img/Alipay.jpg" %}">
+                            </button>
+                            <button type="button" class="pay-btn btn btn-light" onclick="changePayItem1()">
+                                <img src="{% static "img/ChinaUnionPay.jpg" %}">
+                            </button>
+                            <button type="button" class="pay-btn btn btn-light" onclick="changePayItem2()">
+                                <img src="{% static "img/WechatPay.jpg" %}">
+                            </button>
+                        </div>
+                        <div class="pay">
+                            <span>支付金额：</span>
+                            <span id="payNumber" style="font-size: 24px;color: #ff3600">50元</span>
+                            <button type="button" class="btn btn-primary" onclick="charge()" style="display: block;margin-top: 20px;width: 100px">去充值</button>
+                        </div>
+                        <img src="{% static "img/QRcode.jpg" %}" id="QRcode" alt="二维码" style="display: none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

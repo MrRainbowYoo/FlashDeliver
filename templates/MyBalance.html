@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的余额</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/MyFlashDeliver.css' %}">
+    <link rel="stylesheet" href="{% static 'css/MyBalance.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navBar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            杭州师范大学（仓前校区）
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:loadHomePage' %}">首页</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'DDL:OrderOnline' %}">在线下单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:MyFlashDeliver' %}">我的闪送</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:FlashDeliverPrice' %}">闪送价格</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SchoolFlashDriver' %}">校园闪送员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="float: right">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:LoginPage' %}">登录</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'DDL:SignupPage' %}">注册</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content iconfont">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side-bar">
+                    <ul>
+                       <li class="big line-bottom"><a href="{% url 'DDL:MyFlashDeliver' %}"><span>&#xe6f3;</span> 我的订单</a></li>
+                        <li class="big"><span>&#xe662;</span> 我的账户</li>
+                        <li><a href="{% url 'DDL:Mybalance' %}" style="color: blue">账户余额</a></li>
+                        <li><a href="{% url 'DDL:Recharge' %}">充值</a></li>
+                        <li><a href="#">优惠券</a></li>
+                        <li><a href="#">申请发票</a></li>
+                        <li class="big line-top"><span>&#xe604;</span> 设置</li>
+                        <li><a href="#">修改密码</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="card" style="height: 200px;margin-top: 20px">
+                    <div class="card-body">
+                        <span>您当前的闪送余额为：</span>
+                        <span class="balance">0</span>
+                        <span class="balance">元</span>
+                        <a class="btn btn-primary"  href="{% url 'DDL:Recharge' %}" style="margin-left: 10px;margin-top: -5px">充值</a>
+                        <p style="color: #595A5C;font-size: 16px;margin-top: 50px">Tips: 现在充值，充200减10，充500减50。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
